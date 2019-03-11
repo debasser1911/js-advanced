@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>getElementById example</title>
+    <script>
+      function setText(text, color) {
+        var elem = document.body.firstElementChild;
+        elem.innerHTML = text;
+        elem.style.color = color;
+
+        
+      }
+    </script>
+  </head>
+  <body>
+    <div id='myDiv'></div>
+
+    <button onclick="setText('Hello', 'green');">Hello</button>
+    <button onclick="setText('World', 'blue');">World</button>
+  </body>
+</html>
